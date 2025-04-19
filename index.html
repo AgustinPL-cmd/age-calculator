@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Life Calculator</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/luxon@3.6.1/build/global/luxon.min.js"></script>
+  <script src="main.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>LIFE CALCULATOR ☠️</h1>
+  </header>
+
+  <main>
+    <section class="centered-form">
+      <form class="date-form" novalidate>
+        <div class="input-container">
+          <label for="birth-input">Enter Your Birth Day</label>
+          <input type="date" id="birth-input" name="date" required>
+        </div>
+        <button type="submit" class="submit-button">CALCULATE</button>
+      </form>
+    </section>
+
+    <section class="results">
+      <p id="days-alive"></p>
+      <p id="days-life"></p>
+    </section>
+
+    <section class="progress-section">
+      <div class="progress" id="progress">
+        <div class="point"></div>
+      </div>
+      <p id="max-days"></p>
+    </section>
+  </main>
+</body>
+</html>
